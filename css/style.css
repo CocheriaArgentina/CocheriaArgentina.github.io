@@ -218,17 +218,29 @@ text-align: center;}
 }
 
 .info-box {
-    align-items: center;
-    display: flex;
+    display: flex; /* Utilizar Flexbox */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+
+.textpr{
+    font-size: 22px;
 }
+
+.imagpr{
+    max-width: 100%; /* Asegurarse de que la imagen no se salga del contenedor */
+}
+
 
 .info-box img {
     width: 300px;
 }
 .pr {
-    text-align: center; /* Centrar el texto */
-    font-size: 36px; /* Tamaño de la letra */
-  }
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 34px;
+    width: fit-content;
+    margin-right: 20px;
+}
 
 #milestone {
     background: linear-gradient(rgba(41, 205, 255, 0.85), rgba(41, 205, 255, 0.85)), url(../img/bg_banner1.jpg);
