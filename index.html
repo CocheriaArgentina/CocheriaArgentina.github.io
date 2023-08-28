@@ -462,36 +462,17 @@
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <form action="https://formsubmit.co/cocheriaargentina@hotmail.com" method="POST">
-                                <form class="p-lg-5 col-12 row g-3">
-                                    <div>
-                                        <h1>Get in touch</h1>
-                                        <p>Fell free to contact us and we will get back to you as soon as possible</p>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="userName" class="form-label">First name</label>
-                                        <input type="text" class="form-control" placeholder="Jon" id="userName"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="userName" class="form-label">Last name</label>
-                                        <input type="text" class="form-control" placeholder="Doe" id="userName"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="userName" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" placeholder="Johndoe@example.com"
-                                            id="userName" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
-                                        <textarea name="" placeholder="This is looking great and nice."
-                                            class="form-control" id="" rows="4"></textarea>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-brand">Send Message</button>
-                                    </div>
+                                <form action="https://formspree.io/tu-dirección-de-correo" method="POST">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required><br><br>
+                            
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="_replyto" required><br><br>
+                            
+                                <label for="mensaje">Mensaje:</label><br>
+                                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                            
+                                <input type="submit" value="Enviar">
                                 </form>
                             </div>
                         </div>
